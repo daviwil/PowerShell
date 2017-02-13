@@ -66,7 +66,7 @@ namespace Microsoft.PowerShell.Cmdletization
             string cmdletizationXsd = CmdletizationCoreResources.Xml_cmdletsOverObjectsXsd;
             XmlReader cmdletizationSchemaReader = XmlReader.Create(new StringReader(cmdletizationXsd), ScriptWriter.s_xmlReaderSettings);
             ScriptWriter.s_xmlReaderSettings.Schemas = new XmlSchemaSet();
-            ScriptWriter.s_xmlReaderSettings.Schemas.Add(null, cmdletizationSchemaReader);
+            //ScriptWriter.s_xmlReaderSettings.Schemas.Add(null, cmdletizationSchemaReader);
             ScriptWriter.s_xmlReaderSettings.Schemas.XmlResolver = null; // do not fetch external documents
 #endif
         }
